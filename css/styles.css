@@ -383,3 +383,6 @@ address li:last-child {
 .name-end:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+.block-descr {
+  padding: 20px 24px;
+}
