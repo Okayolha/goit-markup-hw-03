@@ -41,7 +41,7 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   font-family: Raleway, sans-serif;
