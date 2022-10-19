@@ -201,13 +201,10 @@ body {
 .feature-list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 30px;
 }
-.distributed:nth-child(4n) {
-  margin-right: 0;
-}
-.distributed {
-  margin-right: 30px;
-  width: 270px;
+.feature-list > .distributed {
+  flex-basis: calc((100% - 90px) / 4);
 }
 .feature-list .title {
   margin-bottom: 10px;
@@ -219,8 +216,6 @@ body {
   text-transform: uppercase;
 }
 .feature-list .desc {
-  margin-bottom: 0;
-
   line-height: 1.71;
 }
 
