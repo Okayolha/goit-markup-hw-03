@@ -36,7 +36,6 @@ a {
   --second-text: #757575;
   --animation-name: #f5f4fa;
   --button-activ: #188ce8;
-  --card-set-gap: 30px;
 }
 
 body {
@@ -198,6 +197,7 @@ body {
   overflow: hidden;
 }
 /* Список переваг */
+
 .feature-list {
   display: flex;
   flex-wrap: wrap;
@@ -223,13 +223,10 @@ body {
 .img {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+  column-gap: 30px;
 }
 .img > .picture {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .rubric {
   margin-bottom: 50px;
@@ -248,13 +245,10 @@ body {
 .items {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+  column-gap: 30px;
 }
 .items > .foto {
-  flex-basis: calc(100% / 4 - var(--card-set-gap));
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+  flex-basis: calc((100% - 90px) / 4);
 
   background-color: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -293,6 +287,15 @@ body {
   height: 252px;
   padding: 60px 0 60px 0;
 }
+.logo-f {
+  display: flex;
+  margin-bottom: 20px;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
 .web-footer {
   color: var(--background-color);
 }
@@ -310,7 +313,6 @@ address li:last-child {
 }
 .info-nav {
   font-style: normal;
-  padding-top: 20px;
 }
 .info-nav .map:hover,
 .info-nav .map:focus,
@@ -364,21 +366,20 @@ address li:last-child {
   background-color: var(--button-color);
 }
 /* Портфоліо */
+
 .firs-block {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+  column-gap: 30px;
 }
 .firs-block > .block-img {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .name-desc {
   padding: 20px 24px;
   background: var(--background-color);
   border: 1px solid #eeeeee;
+  border-top: 0;
 }
 .firs-block .name-block {
   margin-bottom: 4px;
